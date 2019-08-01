@@ -1,5 +1,5 @@
 # merj
-Painless Javascript/JSON object merging.
+Painless recursive Javascript/JSON object merging.
 
 ### [Find merj on NPM.](https://www.npmjs.com/package/merj)
 

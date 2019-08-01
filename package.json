@@ -1,11 +1,12 @@
 {
   "name": "merj",
-  "version": "0.1.0",
-  "description": "Painless Javascript/JSON object merging.",
+  "version": "0.3.0",
+  "description": "Painless recursive Javascript/JSON object merging.",
   "main": "js/main",
   "types": ".d.ts/main",
   "scripts": {
-    "build": "rm -rf .d.ts/ js/ && tsc -p ts/tsconfig.json"
+    "build": "gulp rebuild",
+    "test": "gulp rebuild && jest"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,18 @@
   "bugs": {
     "url": "https://github.com/T99/merj/issues"
   },
-  "homepage": "https://github.com/T99/merj#readme"
+  "homepage": "https://github.com/T99/merj#readme",
+  "dependencies": {
+    "iter-over": "^1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/jest": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-typescript": "latest",
+    "gulp-uglify-es": "latest",
+    "jest": "latest"
+  }
 }
